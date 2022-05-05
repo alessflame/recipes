@@ -11,7 +11,7 @@ I use spoonacular's API to create this project.
 - Redux-Toolkit
 - axios
 
-#
+
 
 
 
