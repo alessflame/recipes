@@ -1,0 +1,116 @@
+/*modulo css che comprende lo stile del container delle ricette e delle card*/
+
+.container{
+
+     display: flex;
+     flex-wrap: wrap;
+     justify-content: center
+
+}
+
+.card{
+     border: 1px solid #B4BF5E;
+     width: 40%;
+     padding: 15px 20px;
+     margin:25px 15px;
+     border-radius: 20px;
+     transition: all 0.5s cubic-bezier(0.215, 0.610, 0.355, 1);
+}
+
+.card:hover{
+     background-color: #252617;
+     color: #B4BF5E;
+}
+
+.card img{
+     margin: 15px 2px;
+     width: 90%;
+     border-radius: 15px;
+}
+
+
+.form{
+     margin: 30px 10px;
+     width: 100%;
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+}
+
+.form .text{
+     border-radius: 4px;
+     width: 220px;
+     height: 30px;
+     font-size: 20px;
+     padding: 2px;
+}
+
+.form .textTitle{
+     font-size: 25px;
+     
+}
+
+
+.RecipeNutritionContainer{
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+
+}
+
+.RecipeNutritionBox{
+     margin-top: 30px;
+     display: flex;
+     width: 80%;
+     justify-content: space-around;
+}
+
+
+
+.goodBox h2{
+     background-color: #B4BF5E;
+     padding: 2px 5px;
+     border-radius: 4px;
+}
+.badBox h2{
+     background-color: #b74a44;
+     padding: 2px 5px;
+     border-radius: 4px;
+}
+
+.RecipeNutritionBox .cardNutrition{
+margin: 10px 0;
+}
+
+.cardNutritionValues{
+     display: flex;
+     flex-wrap: wrap;
+}
+
+.percent{
+     background-color: #98b6b0ec;
+     margin-left: 10px;
+     padding: 2px 5px;
+     border-radius: 4px;
+}
+.value{
+     background-color: #98b6b0ec;
+     padding: 2px 5px;
+     border-radius: 4px;
+}
+
+
+
+
+@media only screen and (max-width:600px){
+     .card{ width: 90%;}
+
+     .RecipeNutritionBox{
+          
+          width: 98%;
+          flex-direction: column;
+     }
+     
+     .goodBox, .badBox{margin-top: 20px;}
+
+}

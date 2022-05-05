@@ -1,0 +1,69 @@
+.box{
+     width: 100%;
+     display: flex;
+     flex-direction: column;
+     align-items: flex-start;
+}
+
+
+.card{
+     width: 80%;
+     display: flex;
+     justify-content: space-around;
+     align-items: center;
+     padding: 5px;
+     border: 1px solid #B4BF5E;
+}
+
+
+
+.card img{
+     width: 30%;
+     border-radius: 10px;
+     padding: 2px;
+}
+
+.card .price{
+     padding: 2px 5px;
+     border-radius: 4px;
+     background-color: #CAD959;
+     color: #252617;
+}
+
+.totalPriceBox{
+     display: flex;
+     flex-direction: column;
+     margin: 30px 10px;
+     padding: 5px 10px;
+}
+
+.deleteIcon{
+    width: auto;
+     font-size: 35px;
+     color: rgb(153, 73, 62);
+}
+
+.totalPriceBox h3{
+     margin:20px 2px;
+}
+
+@media only screen and (max-width:600px) {
+     
+     .box{
+          margin: 30px 0;
+     }
+     .card{
+          flex-direction: column;
+     }
+
+     .card img{
+          width: 180px;
+          margin: 20px 1px;
+     }
+
+     .deleteIcon{
+          align-self: flex-end;
+     }
+
+
+}

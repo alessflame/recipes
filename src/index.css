@@ -1,0 +1,165 @@
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+
+:root{
+  font-family: 'PT Sans', sans-serif;
+  background-color: #f3f4ee;
+}
+
+.container{
+  margin: 0 25px;
+  overflow-x: hidden;
+}
+
+
+.header h1{
+  color: #34401A;
+}
+
+
+.navBar, .navBarClose{
+  height: auto;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  background-color: #34401A;
+  border-radius: 4px;
+}
+
+
+.navBar a, .navBarClose a{
+  padding: 10px 25px;
+  margin: 2px 15px;
+  font-size: 20px;
+  color: white;
+  text-decoration: none;
+  border-radius: 4px;
+}
+
+.navBar a:hover{
+  background-color: #CAD959;
+  color: black;
+}
+
+.burgerMenu{
+  display: none;
+
+}
+
+
+.modal{
+  display: grid;
+  align-items: center;
+   grid: row 2px;;
+  background-color: #f3f4ee;
+  border: 5px double #34401A;
+  position: fixed;
+  left: 40vw;
+  font-size: 20px;
+  padding: 5px 10px;
+  z-index: 10;
+  width: 280px;
+  min-height: 130px;
+  height: auto;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.textModal{
+  background-color: #CAD959;
+  border-radius: 4px;
+  padding: 4px 7px;
+  margin: 10px 5px;
+  
+}
+
+.modalIcon{
+  font-size: 30px;
+  color: rgb(186, 52, 52);
+}
+
+
+.button{
+  border-radius: 4px;
+  border: 1px solid rgba(183, 179, 179, 0.918);
+  background-color: #64732F;
+  font-size: 20px;
+  font-weight: 400;
+  padding: 5px 10px;
+  width: 30%;
+  cursor: pointer;
+  margin: 15px 20px;
+  box-shadow: 2px 2px 2px rgba(158, 155, 155, 0.84);
+  transition: all 0.5s cubic-bezier(0.23, 1, 0.320, 1);
+  
+}
+.button a{text-decoration: none; 
+color: #f3f4ee;}
+
+.button:hover {
+  background-color: rgba(183, 179, 179, 0.918) ;
+  color: #34401A;
+}
+
+.footer{
+  margin-top: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  background-color: #56593E;
+  height: 100px;
+}
+
+.footer span{
+  font-size: 20px;
+}
+
+@media only screen and (max-width:600px){
+  .container{
+    margin: 0;
+
+  }
+
+  .navBar, .navBarClose{
+    transition: all 1s ease-in-out;
+    top: 0;
+    position: fixed;
+    z-index: 1;
+    height: 100vh;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .navBar a, .navBarClose a{
+    text-align: center;
+    width: 80%;
+    font-size: 25px;
+  }
+
+  .navBarClose{
+    overflow-x: hidden;
+    transform: translateX(100%);
+  }
+
+  .burgerMenu{
+    display: block;
+    position: fixed;
+    top:5px;
+    right: 10px;
+    font-size:40px;
+    z-index: 10;
+  }
+
+  .modal{
+   left: 5%;
+  }
+}

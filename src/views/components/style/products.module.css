@@ -1,0 +1,50 @@
+.container{
+     margin: 30px 0;
+     width: 100%;
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+}
+
+.card{
+     width: 500px;
+     display: flex;
+     margin: 15px 5px;
+     flex-direction: column;
+     border-radius: 20px;
+     border: 1px solid black;
+     padding: 0.5px;
+     transition: all 0.5s cubic-bezier(0.215, 0.610, 0.355, 1);
+}
+
+.card:hover{
+     background-color: #252617;
+    
+}
+.card:hover h2 {
+     color: #B4BF5E;
+}
+
+.card img{
+     margin: 15px 20px;
+     border-radius: 4px;
+     
+}
+
+.card .price{
+     background-color: #B4BF5E;
+     width: 20%;
+     border-radius: 4px;
+     text-align: center;
+     align-self: flex-end;
+     margin: 2px 5px;
+}
+
+
+@media only screen and (max-width: 600px) {
+
+     .card{
+          width: 90%;
+     }
+     
+}
