@@ -1,0 +1,58 @@
+.section, .sectionReverse{
+ 
+     display: flex;
+     justify-content: space-between;
+   }
+
+   .sectionReverse{
+        flex-direction: row-reverse;
+   }
+   
+   .section img, .sectionReverse img{
+     width: 50%;
+   }
+   
+   .sectionBox{
+      width: 80%;
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+     justify-content: center;
+     text-align: left;
+
+    
+   }
+
+   .text{
+    width: 80%;
+    background-color: rgba(53, 103, 53, 0.77);
+    border-radius: 5px;
+    padding: 6px 8px;
+    font-size: 20px;
+    
+}
+
+  
+
+   @media only screen and (max-width : 600px){
+
+     .section, .sectionReverse{
+          justify-content: center;
+          align-items: center;
+          flex-direction: column;
+     }
+
+     .sectionReverse{
+       margin: 30px 0;
+     }
+
+     .section img, .sectionReverse img{
+       width: 80%;
+     }
+    
+ 
+      
+
+
+        
+   }
