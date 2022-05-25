@@ -112,14 +112,21 @@ color: #f3f4ee;}
   margin-top: 80px;
   display: flex;
   justify-content: center;
-  align-items: center;
   width: 100%;
-  background-color: #56593E;
+  background-color: #1f201b;
+  color: #CAD959;
   height: 100px;
+  align-items: center
 }
 
 .footer span{
+  width: 90%;
+  padding: 5px 8px;
   font-size: 20px;
+}
+
+.footer a{
+  color: #4d6814;
 }
 
 @media only screen and (max-width:600px){
