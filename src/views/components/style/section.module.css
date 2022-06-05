@@ -10,8 +10,13 @@
    
    .section img, .sectionReverse img{
      width: 50%;
+     padding: 30px 40px;
+     background-color: #252617
+   
    }
    
+ 
+
    .sectionBox{
       width: 80%;
      display: flex;
@@ -25,11 +30,10 @@
 
    .text{
     width: 50%;
-    background-color: rgba(53, 103, 53, 0.77);
+    background-color: var(--green--middle);
     border-radius: 5px;
     padding: 6px 8px;
     font-size: 20px;
-    
 }
 
   
@@ -45,11 +49,11 @@
 
 
      .section img, .sectionReverse img{
-       width: 80%;
+       width: 95%;
      }
 
      .text{
-      width: 70%;
+      width: 85%;
      }
     
  

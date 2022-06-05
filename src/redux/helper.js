@@ -17,7 +17,7 @@ export const fetchRecipes= async (dispatch) =>{
      }
 }  
 
-export const fetchRecipeNutrition= (id)=>  { return async(dispatch )=>{
+export const fetchRecipeNutrition= (id) =>  { return async(dispatch)=>{
 
    try{
       const response= await axios.get(`https://api.spoonacular.com/recipes/${id}/nutritionWidget.json?apiKey=${apiKey}`);

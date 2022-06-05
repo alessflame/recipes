@@ -9,14 +9,7 @@ import img1 from "../../images/pasta.jpg";
 import img2 from "../../images/vegetable.jpg";
 
 
-const slides=[
-  <Slide image={image1} text="Abbiamo selezionato le migliori 100 ricette per permettere ai nostri utenti
-  di conoscere la cucina 'GREEN'e di preparare piatti deliziosi. " title="Ricette Green"/>,
-  <Slide image={image3} text="Conoscere la cucina vegetariana è fondamentale per seguire una dieta 
-  sana ed equilibrata. " title="Benessere"/>,
-  <Slide image={image2} text="Per conoscere tutti i segreti di una dieta Green segui i corsi che 
-  abbiamo creato per aiutarti a raggiungere il tuo obiettivo." title="Impara"/>
-]
+
 
 
 
@@ -24,7 +17,7 @@ const slides=[
 function Home() {
   return (
     <div>
-      <Slider slides={slides}/>
+      <Slider/>
 
       <Section img={img1} title="Dieta Sana" text="Non credere mai a chi nutre pregiudizi e fai ciò che ritieni giusto. I piatti 'green' contengono le stesse quantità di nutrienti che assumeresti in piatti 
       di carne." reverse={false}/>

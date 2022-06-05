@@ -1,73 +1,93 @@
-.slider{
-     position: relative;
-     margin: 35px 0;
-     width: 100%;
-     display: flex;
-     align-items: center;
-     justify-content: center;
-     height: 800px;
-     min-height: 800px;
-     margin-bottom: 100px;
-     background-color: rgba(78, 119, 78, 0.792);
+.slider {
+  position: relative;
+  margin: 35px 0;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 800px;
+  min-height: 800px;
+  margin-bottom: 100px;
+  background-color: var(--green--middle);
+  /* overflow:hidden; */
+}
+
+.slides {
+  position: relative;
+  display: flex;
+  width: 100vw;
+  height: 100%;
+  /* overflow-x: hidden; */
+}
+
+.slide, .slideSelected {
+  position: absolute;
+  top: 5%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 600px;
+  width: 100%;
+  transition: all 1s cubic-bezier(0.215, 0.610, 0.355, 1);
+  animation: change 1s;
 }
 
 .slide{
-     position: relative;
-     display: flex;
-     flex-direction: column;
-     align-items: center;
-     justify-content: center;
-     height: 600px;
-     width: 70%;
-
-     
-     
+     opacity: 0;
+     z-index: -1;
+     transform: translateX(-50vw);
 }
+
+.slideSelected{
+     transform: translate(0);
+     opacity: 1;
+    
+}
+
 
 @keyframes change {
-     0%{
-          transform: scaleX(0);
-     }
-
-     100%{
-          transform: scaleX(100%);
-     }
-}
-
-.image{
-     width: 500px;
-     height: 350px;
-     border-radius: 10px;
-}
-
- .textCard{
-     top: 0;
-}
-
-.row{
-     margin: 10px 0;
-     font-size: 40px;
-     fill: black;
-}
-
-
-@media only screen and (max-width:600px){
-
-     .slider{
-          height: 600px;
-     margin: 35px 3px;
-     margin-bottom: 20px;
-     min-height: 600px;
-     }
-
-     .image{
-     width: 300px;
-     height: 200px;}
-
-
-     .row{
-          display: none;}
-
- 
+  0% {
+     transform: translateX(-30vw);
      
+  }
+
+  100% {
+     transform: translateX(0);
+     
+  }
+}
+
+.image {
+  width: 500px;
+  height: 350px;
+  border-radius: 10px;
+}
+
+.textCard {
+  top: 0;
+}
+
+.row {
+  margin: 10px 0;
+  font-size: 40px;
+  fill: var(--black--dark);
+}
+
+@media only screen and (max-width: 600px) {
+  .slider {
+    height: 600px;
+    margin: 35px 3px;
+    margin-bottom: 20px;
+    min-height: 600px;
+  }
+
+  .image {
+    width: 300px;
+    height: 200px;
+  }
+
+  .row {
+    display: none;
+  }
 }
