@@ -10,11 +10,13 @@
 
 .card{
      border: 1px solid #B4BF5E;
+     background-color: rgba(255, 255, 255, 0.841);
      width: 40%;
      padding: 15px 20px;
      margin:25px 15px;
      border-radius: 20px;
      transition: all 0.5s cubic-bezier(0.215, 0.610, 0.355, 1);
+     padding-bottom: 30px;
 }
 
 .card:hover{
@@ -23,7 +25,7 @@
 }
 
 .card img{
-     margin: 15px 2px;
+     margin: 20px 2px;
      width: 90%;
      border-radius: 15px;
 }
@@ -38,11 +40,14 @@
 }
 
 .form .text{
-     border-radius: 4px;
+     margin-top: 10px;
+     border: none;
+     outline: 3px solid #B4BF5E;
+     border-radius: 15px;
      width: 220px;
      height: 30px;
      font-size: 20px;
-     padding: 2px;
+     padding:  2px 10px;
 }
 
 .form .textTitle{

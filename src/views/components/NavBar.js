@@ -4,17 +4,17 @@ import {AiOutlineShoppingCart} from "react-icons/ai"
 import { useSelector } from 'react-redux';
 
 
-function NavBar({classes}) {
+function NavBar({classes, setOpen}) {
  const {cart}= useSelector(state=> state)
 
   return (
     
 
     <nav className={classes}>
-         <Link to="/">Home</Link>
-         <Link to="recipes">Recipes</Link>
-         <Link to="products">Products</Link>
-         <Link to="cart"> <AiOutlineShoppingCart/><span>{cart.total}</span></Link>
+         <Link to="/" onClick={()=>setOpen(false)}>Home</Link>
+         <Link to="recipes" onClick={()=>setOpen(false)}>Recipes</Link>
+         <Link to="products" onClick={()=>setOpen(false)}>Products</Link>
+         <Link to="cart" onClick={()=>setOpen(false)}> <AiOutlineShoppingCart/><span>{cart.total}</span></Link>
         
     </nav>
   )

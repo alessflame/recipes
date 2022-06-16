@@ -14,6 +14,12 @@
      background-color: #252617
    
    }
+
+
+   .title{
+    margin: 15px 0;
+    font-size: 27px;
+   }
    
  
 
@@ -32,7 +38,8 @@
     width: 50%;
     background-color: var(--green--middle);
     border-radius: 5px;
-    padding: 6px 8px;
+    margin-top: 5px;
+    padding: 10px 15px;
     font-size: 20px;
 }
 

@@ -17,7 +17,7 @@ function Header() {
     <div className='header'>
           <h1>100Green</h1>
          <span className='burgerMenu' onClick={()=>{setOpen(!open)}}><AiOutlineMenu/></span>
-          <NavBar classes={open===true ? "navBar": "navBarClose"}/>
+          <NavBar setOpen={setOpen} classes={open===true ? "navBar": "navBarClose"}/>
     </div>
   )
 }
