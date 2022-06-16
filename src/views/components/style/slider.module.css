@@ -5,10 +5,10 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 800px;
-  min-height: 800px;
+  height: 700px;
+  min-height: 700px;
   margin-bottom: 100px;
-  background-color: var(--green--middle);
+  background-color: transparent;  
   /* overflow:hidden; */
 }
 
@@ -26,7 +26,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: flex-start;
+  justify-content: flex-end;
   height: 600px;
   width: 100%;
   transition: all 1s cubic-bezier(0.215, 0.610, 0.355, 1);
@@ -57,15 +57,28 @@
      
   }
 }
+.slide, .slideSelected {
+  position: absolute;
+  top: 0;
+}
 
 .image {
-  width: 500px;
-  height: 350px;
+  
+  width: 800px;
+  height: 600px;
   border-radius: 4px;
+  position: absolute;
+  background-color: black;
+  mix-blend-mode: multiply;
 }
 
 .textCard {
   top: 0;
+}
+
+.sectionText{
+  position: absolute;
+  bottom: 0;
 }
 
 .row {
@@ -82,12 +95,12 @@
     min-height: 600px;
   }
 
-  .image {
-    width: 330px;
-    height: 230px;
+  /* .image {
+    width: 500px;
+    height: 400px;
     background-color: black;
     mix-blend-mode: darken;
-  }
+  } */
 
   .row {
     display: none;
