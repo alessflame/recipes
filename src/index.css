@@ -23,13 +23,14 @@ html{
 }
 
 .container{
-  margin: 0 25px;
   overflow-x: hidden;
+
 }
 
 
 .header h1{
-  color: #34401A;
+  padding: 3px 5px;
+  color: #4d6814;
 }
 
 
@@ -145,6 +146,15 @@ color: #f3f4ee;}
     margin: 0;
 
   }
+
+  
+.logo{
+  padding: 3px 5px;
+  border-radius: 4px;
+  width: 100%;
+  color: #4d6814;
+  background-color: #1f201b;}
+
 
   .navBar, .navBarClose{
     transition: all 1s ease-in-out;
