@@ -16,7 +16,7 @@ import img2 from "../../images/vegetable.jpg";
 
 function Home() {
   return (
-    <div>
+    <div className='home'>
       <Slider/>
 
       <Section img={img1} title="Dieta Sana" text="Non credere mai a chi nutre dei pregiudizi. I piatti 'green' contengono le stesse quantità di nutrienti che assumeresti in piatti 

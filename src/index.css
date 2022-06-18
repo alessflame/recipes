@@ -33,6 +33,10 @@ html{
   color: #4d6814;
 }
 
+.home{
+  margin: 0 40px;
+}
+
 
 .navBar, .navBarClose{
   height: auto;
@@ -145,6 +149,10 @@ color: #f3f4ee;}
   .container{
     margin: 0;
 
+  }
+
+  .home{
+    margin: 0;
   }
 
   
