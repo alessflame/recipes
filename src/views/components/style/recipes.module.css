@@ -19,6 +19,11 @@
      padding-bottom: 30px;
 }
 
+.responsive{
+     width: 30%;
+     min-width: "375px";
+}
+
 .card:hover{
      background-color: #252617;
      color: #B4BF5E;
@@ -42,8 +47,19 @@
 .form .text{
      margin-top: 10px;
      border: none;
-     outline: 3px solid #B4BF5E;
-     border-radius: 15px;
+     outline: 1px solid #B4BF5E;
+     border-radius: 12px;
+     box-shadow: 1px 1px 1px 1px var(--green--light-yellow);
+     width: 220px;
+     height: 30px;
+     font-size: 20px;
+     padding:  2px 10px;
+}
+.form .text:focus{
+     margin-top: 10px;
+     border: none;
+     outline: 2px solid #B4BF5E;
+     border-radius: 10px;
      width: 220px;
      height: 30px;
      font-size: 20px;
@@ -60,6 +76,7 @@
      display: flex;
      flex-direction: column;
      align-items: center;
+     margin-top: 80px;
 
 }
 
@@ -114,6 +131,10 @@ margin: 10px 0;
           
           width: 98%;
           flex-direction: column;
+     }
+     .responsive{
+          width: 90%;
+          min-width: "375px";
      }
      
      .goodBox, .badBox{margin-top: 20px;}

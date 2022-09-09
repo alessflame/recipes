@@ -16,8 +16,8 @@ function RecipeNutrition() {
   const { recipes } = useSelector((state) => state);
   const dispatch = useDispatch();
 
-  const good=recipes.singleRecipeNutrition.good;
-  const bad=recipes.singleRecipeNutrition.bad;
+  const good = recipes.singleRecipeNutrition.good;
+  const bad = recipes.singleRecipeNutrition.bad;
 
   const fetchData = useCallback(() => {
     dispatch(fetchRecipeNutrition(id));
@@ -29,11 +29,26 @@ function RecipeNutrition() {
     <div className={stile.RecipeNutritionContainer}>
       <Recipe {...recipes.singleRecipe} isCard={false} />
       <h1>Nutrients:</h1>
-      { good!== undefined && bad!==undefined ?(
-<article className={stile.RecipeNutritionBox}>
-<section className={stile.goodBox}><h2>Good:</h2><span>{recipes.singleRecipeNutrition.good.map((item,index)=> <NutrientsCard key={index} {...item}/>)}</span></section> 
-<section className={stile.badBox}><h2>Bad:</h2><span>{recipes.singleRecipeNutrition.bad.map((item,index)=> <NutrientsCard key={index} {...item}/>)}</span></section> 
-</article >): null }
+      {good !== undefined && bad !== undefined ? (
+        <article className={stile.RecipeNutritionBox}>
+          <section className={stile.goodBox}>
+            <h2>Good:</h2>
+            <span>
+              {recipes.singleRecipeNutrition.good.map((item, index) => (
+                <NutrientsCard key={index} {...item} />
+              ))}
+            </span>
+          </section>
+          <section className={stile.badBox}>
+            <h2>Bad:</h2>
+            <span>
+              {recipes.singleRecipeNutrition.bad.map((item, index) => (
+                <NutrientsCard key={index} {...item} />
+              ))}
+            </span>
+          </section>
+        </article>
+      ) : null}
     </div>
   );
 }

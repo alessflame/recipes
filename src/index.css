@@ -132,18 +132,12 @@ color: #f3f4ee;}
   background-color: #1f201b;
   color: #CAD959;
   height: 100px;
-  align-items: center
-}
+  align-items: center;
+  margin-bottom: 0;}
 
-.footer span{
-  width: 90%;
-  padding: 5px 8px;
-  font-size: 20px;
-}
 
-.footer a{
-  color: #4d6814;
-}
+
+
 
 @media only screen and (max-width:600px){
   .container{
@@ -197,5 +191,9 @@ color: #f3f4ee;}
 
   .modal{
    left: 5%;
+  }
+
+  .footer{
+    flex-direction: column;
   }
 }
