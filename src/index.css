@@ -26,7 +26,9 @@ html{
   overflow-x: hidden;
 
 }
-
+header{
+  position: relative;
+}
 
 .header h1{
   padding: 3px 5px;
@@ -106,10 +108,10 @@ html{
   border-radius: 4px;
   border: 1px solid rgba(183, 179, 179, 0.918);
   background-color: #64732F;
-  font-size: 20px;
+  font-size: 18px;
   font-weight: 400;
-  padding: 5px 10px;
-  width: 30%;
+  padding: 5% 7%;
+  width: 50%;
   cursor: pointer;
   margin: 15px 20px;
   box-shadow: 2px 2px 2px rgba(158, 155, 155, 0.84);
@@ -117,7 +119,9 @@ html{
   
 }
 .button a{text-decoration: none; 
-color: #f3f4ee;}
+color: #f3f4ee;
+font-size: 15px;
+}
 
 .button:hover {
   background-color: rgba(183, 179, 179, 0.918) ;
@@ -128,6 +132,8 @@ color: #f3f4ee;}
   margin-top: 80px;
   display: flex;
   justify-content: center;
+  align-items: center;
+  flex-direction: column;
   width: 100%;
   background-color: #1f201b;
   color: #CAD959;
@@ -187,6 +193,7 @@ color: #f3f4ee;}
     right: 10px;
     font-size:40px;
     z-index: 50;
+    border: 2px solid yellow;
   }
 
   .modal{

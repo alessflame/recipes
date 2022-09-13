@@ -16,7 +16,7 @@ function Footer() {
     <Box className="footer">
       <Typography as="h4">Francesco Alessi</Typography>
 
-      <BottomNavigation sx={{ width: 500, backgroundColor: "transparent" }}>
+      <BottomNavigation sx={{ width: "100%", backgroundColor: "transparent" }}>
         <a
           target="_blank"
           rel="noopener noreferrer"
