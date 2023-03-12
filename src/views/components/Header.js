@@ -1,6 +1,7 @@
 import React,{useEffect, useState} from 'react'
 import {AiOutlineMenu} from "react-icons/ai";
 import NavBar from './NavBar';
+import ResponsiveAppBar from './ResponsiveAppBar';
 
 function Header() {
      const [open, setOpen]= useState(true);
@@ -15,9 +16,7 @@ function Header() {
   return (
      
     <div className='header'>
-          <h1 className='logo'>100Green</h1>
-         <span className='burgerMenu' onClick={()=>{setOpen(!open)}}><AiOutlineMenu/></span>
-          <NavBar setOpen={setOpen} classes={open===true ? "navBar": "navBarClose"}/>
+         <ResponsiveAppBar/>
     </div>
   )
 }

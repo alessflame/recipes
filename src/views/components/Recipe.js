@@ -59,13 +59,13 @@ dispatch(addSingleRecipe(recipeObj));
     </CardActionArea>
     {isCard===true ? 
     (<CardActions>
-      <Button size="large" color="primary" sx={{backgroundColor:"#64732F", color:"white", fontSize:"14"}} className='button'>
+      <Button size="large" color="success" variant="contained" sx={{fontSize:"14"}} >
       <Link to={`/recipes/${id}`} style={{fontSize:"14"}}>Esplora</Link>
       </Button></CardActions>
      ) : null}
   </Card>
 
-
+// backgroundColor:"#64732F", color:"white", 
         
   
   )

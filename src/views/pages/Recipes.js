@@ -1,12 +1,12 @@
 import React from 'react'
 import RecipesList from '../components/RecipesList'
-import SearchRecipe from '../components/SearchRecipe'
+import SearchInput from '../components/SearchInput'
 
 function Recipes() {
   return (
    
     <div className='recipes'>
-      <SearchRecipe/>
+      <SearchInput/>
       <RecipesList/>
     </div>
   )

@@ -2,6 +2,13 @@ import React, { useState } from 'react'
 import { useDispatch, useSelector } from 'react-redux'
 import { addFilter } from '../../redux/slice/recipesSlice';
 import stile from "./style/recipes.module.css"
+import Paper from '@mui/material/Paper';
+import InputBase from '@mui/material/InputBase';
+import Divider from '@mui/material/Divider';
+import IconButton from '@mui/material/IconButton';
+import MenuIcon from '@mui/icons-material/Menu';
+import SearchIcon from '@mui/icons-material/Search';
+import DirectionsIcon from '@mui/icons-material/Directions';
 
 function SearchRecipe() {
 
@@ -27,3 +34,6 @@ function SearchRecipe() {
 }
 
 export default SearchRecipe
+
+
+

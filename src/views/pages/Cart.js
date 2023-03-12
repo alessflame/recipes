@@ -8,7 +8,7 @@ function Cart() {
    const{cart}= useSelector(state=>state);
     console.log(cart);
   return (
-    <div>
+    <div style={{ marginTop:"50px" }}>
       <CartBox/>
       <TotalPriceCart/>
        </div>

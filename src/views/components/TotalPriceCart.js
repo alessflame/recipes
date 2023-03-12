@@ -4,6 +4,7 @@ import stile from "./style/cart.module.css"
 import { useDispatch } from 'react-redux'
 import {deleteCart} from "../../redux/slice/cartSlice"
 import {setModal} from "../../redux/slice/modalSlice"
+import { Box, Button, Typography } from '@mui/material'
 
 
 function TotalPriceCart() {
@@ -20,12 +21,13 @@ function TotalPriceCart() {
 
      const {cart}= useSelector(state=>state)
   return (
-    <div className={stile.totalPriceBox}>
-         <h3>in totale:{cart.priceTotal}$</h3>
-         <section>
-         <span className='button' onClick={payCart}>Acquista</span>
-         <span className='button' onClick={emptyCart}>Svuota</span></section>
-    </div>
+    <Box className={stile.totalPriceBox}>
+         <Typography as="h3">in totale:{cart.priceTotal}€</Typography>
+         <Box>
+         <Button color="success" variant="contained" sx={{   margin:"10px" }} onClick={payCart}>Acquista</Button>
+         <Button color="error" variant="outlined" sx={{   margin:"10px" }} onClick={emptyCart}>Svuota</Button>
+         </Box>
+    </Box>
   )
 }
 

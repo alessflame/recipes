@@ -1,22 +1,24 @@
-import { Box, Typography } from "@mui/material";
-import React from "react";
-import BottomNavigation from "@mui/material/BottomNavigation";
-import BottomNavigationAction from "@mui/material/BottomNavigationAction";
+import React from 'react'
 import RocketLaunchIcon from "@mui/icons-material/RocketLaunch";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import GitHubIcon from "@mui/icons-material/GitHub";
+import { Box,Typography,Link, BottomNavigation, BottomNavigationAction } from '@mui/material'
 
-function Footer() {
+function FooterComponent() {
   return (
-    // <div className='footer'>
-    //      <span>
-    //           Per visualizzare altri progetti vai al mio account <a href='https://github.com/alessflame'>GitHub</a>
-    //      </span>
-    // </div>
-    <Box className="footer">
+    <Box sx={{ bgcolor: "background.paper", p: 6 }} component="footer">
+    <Typography variant="h6" align="center" gutterBottom>
+        Francesco Alessi
+    </Typography>
+    <Typography
+        variant="subtitle1"
+        align="center"
+        color="text.secondary"
+        component="p"
+    >
 
-      <BottomNavigation sx={{ width: "100%", display:"flex", backgroundColor: "transparent", alignItems:"center" }}>
-              <Typography as="h4">Francesco Alessi</Typography>
+
+<BottomNavigation sx={{ width: "100%", display:"flex", backgroundColor: "transparent", alignItems:"center" }}>
 <a
           target="_blank"
           rel="noopener noreferrer"
@@ -25,7 +27,7 @@ function Footer() {
           <BottomNavigationAction
             label="Recents"
             value="recents"
-            icon={<LinkedInIcon sx={{ fontSize: 40, color: "white" }} />}
+            icon={<LinkedInIcon sx={{ fontSize: 40, color: "teal" }} />}
           />
         </a>
         <a
@@ -36,7 +38,7 @@ function Footer() {
           <BottomNavigationAction
             label="Favorites"
             value="favorites"
-            icon={<GitHubIcon sx={{ fontSize: 40, color: "white" }} />}
+            icon={<GitHubIcon sx={{ fontSize: 40, color: "black" }} />}
           />
         </a>
 
@@ -48,12 +50,14 @@ function Footer() {
           <BottomNavigationAction
             label="Nearby"
             value="nearby"
-            icon={<RocketLaunchIcon sx={{ fontSize: 40, color: "white" }} />}
+            icon={<RocketLaunchIcon sx={{ fontSize: 40, color: "green" }} />}
           />
         </a>
       </BottomNavigation>
-    </Box>
-  );
+
+    </Typography>
+</Box>
+  )
 }
 
-export default Footer;
+export default FooterComponent
