@@ -60,7 +60,7 @@ dispatch(addSingleRecipe(recipeObj));
     {isCard===true ? 
     (<CardActions>
       <Button size="large" color="success" variant="contained" sx={{fontSize:"14"}} >
-      <Link to={`/recipes/${id}`} style={{fontSize:"14"}}>Esplora</Link>
+      <Link to={`/recipes/${id}`} style={{fontSize:"14", textDecoration:"none", color:"white"}}>Esplora</Link>
       </Button></CardActions>
      ) : null}
   </Card>
